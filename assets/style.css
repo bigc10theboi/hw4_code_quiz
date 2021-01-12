@@ -27,7 +27,7 @@ p, div {
     margin-right: 10em;
   }
 
-  /* Button styling */
+/* Button styling */
 button {
     background-color: #28449c;
     border: none;
@@ -44,6 +44,7 @@ button:hover {
     color: #f3f3f3;
 }
 
+/* class to hide questions and ending screen */
 .hide {
     display: none;
 }
