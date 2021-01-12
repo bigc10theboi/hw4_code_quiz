@@ -1,27 +1,27 @@
 let questions = [
     {
-      title: "Who invented JavaScript?",
-      choices: ["Douglas Crockford", "Sheryl Sandberg", "Brendan Eich"],
-      answer: "Brendan Eich",
+      title: "Inside which HTML element do we put the JavaScript?",
+      choices: ["<script>", "<javascript>", "<scripting>", "<js>"],
+      answer: "<script>",
     },
     {
-      title: "Which one of these is a JavaScript package manager?",
-      choices: ["Node.js", "TypeScript", "npm"],
-      answer: "npm",
+      title: "Where is the correct place to insert a JavaScript?",
+      choices: ["The <head> section ", "The <body> section", "Both the <head> section and the <body> section are correct"],
+      answer: "Both the <head> section and the <body> section are correct",
     },
     {
-      title: "Which tool can you use to ensure code quality?",
-      choices: ["Angular", "jQuery", "RequireJS", "ESLint"],
-      answer: "ESLint",
+      title: "How do you create a function in JavaScript?",
+      choices: ["function:myFunction()", "function myFunction()", "function = myFunction()"],
+      answer: "function myFunction()",
     },
     {
       title: "Which symbol is used for comments in Javascript?",
-      choices: ["//", "/*", "Line", "Comment"],
-      answer: "//",
+      choices: ["//this is a comment//", "/*this is a comment*/", "<!--This is a comment-->", "Comment="],
+      answer: "//this is a comment//",
     },
     {
-      title: "What are all the looping structures in Javascript?",
-      choices: ["For", "While", "do-while loops"],
-      answer: "For",
+      title: "How do you declare a JavaScript variable?",
+      choices: ["v carName;", "variable carName;", "var carName; "],
+      answer: "var carName; ",
     },
   ];
