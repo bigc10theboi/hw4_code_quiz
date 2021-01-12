@@ -10,7 +10,6 @@ var submitBtn = document.getElementById("submit");
 var startBtn = document.getElementById("start");
 // var initialsEl = document.getElementById("initials");
 
-
 // timer countdown function;
 function clockTick() {
     // time update
