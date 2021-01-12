@@ -2,6 +2,26 @@
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Courier New', Courier, monospace;
 }
+
 p, div {
+    font-weight: 500;
+    padding: 5px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+/* start screen styles */
+#quizStart {
+    text-align: center;
+    padding: 50px;
+    border: lightgray 20px;
+    width: 500px;
+    margin: auto;
+  }
+
+/* timer styling */
+.timer {
+    text-align: center;
+    font-weight: bold;
+    color: #882963;;
+    font-size: 40px;
+  }
