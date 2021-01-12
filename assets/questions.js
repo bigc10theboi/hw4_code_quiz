@@ -1,4 +1,4 @@
-let questions = [
+var questions = [
     {
       title: "Inside which HTML element do we put the JavaScript?",
       choices: ["<script>", "<javascript>", "<scripting>", "<js>"],
