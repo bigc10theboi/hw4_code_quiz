@@ -22,6 +22,20 @@ p, div {
 .timer {
     text-align: center;
     font-weight: bold;
-    color: #882963;;
+    color: #28449c;
     font-size: 40px;
   }
+
+  /* Button styling */
+button {
+    background-color: #28449c;
+    border: none;
+    color: white;
+    padding: 20px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    transition-duration: 1s;
+  }
+    
