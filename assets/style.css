@@ -20,10 +20,11 @@ p, div {
 
 /* timer styling */
 .timer {
-    text-align: center;
+    text-align: right;
     font-weight: bold;
     color: #28449c;
     font-size: 40px;
+    margin-right: 10em;
   }
 
   /* Button styling */
