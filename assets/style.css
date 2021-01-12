@@ -9,8 +9,8 @@ p, div {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* start screen styles */
-#quizStart {
+/* text style and formatting */
+#quizStart, #endScreen, #questions {
     text-align: center;
     padding: 50px;
     border: lightgray 20px;
