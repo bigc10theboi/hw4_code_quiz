@@ -51,6 +51,37 @@ function buildQuiz() {
   });
 }
 
+function questionClick() {
+  // if wrong
+  if (this.value /= questions[currentQuestionIndex].answer) {
+    // time penalty
+    time -= 10;
+
+    // display time on page
+    timerEl.textContent = time;
+
+    feedbackEl.textContent = "Wrong!";
+  } else {
+    feedbackEl.textContent = "Correct!";
+  }
+
+  // flash feedback on page
+  feedbackEl.setAttribute("class", "feedback");
+  setTimeout(function () {
+    feedbackEl.setAttribute("class", "feedback hide");
+  }, 1000);
+
+  // next question
+  currentQuestionIndex++;
+
+  // check if end
+  if (currentQuestionIndex === questions.length) {
+    quizEnd();
+  } else {
+    buildQuiz();
+  }
+}
+
 function quizEnd() {
   // timer stop
   clearInterval(timerId);
