@@ -35,6 +35,21 @@ function buildQuiz() {
   // clear out old question choices
   choicesEl.innerHTML = "";
 
+  // loop choices
+  currentQuestion.choices.forEach(function (choice, i) {
+    // create button for choice
+    var choiceNode = document.createElement("button");
+    choiceNode.setAttribute("class", "choice");
+    choiceNode.setAttribute("value", choice);
+
+    choiceNode.textContent = i + 1 + ". " + choice;
+    // add eventListner for each choice
+    choiceNode.onclick = questionClick;
+
+    // display on the page
+    choicesEl.appendChild(choiceNode);
+  });
+}
 
 function quizEnd() {
   // timer stop
