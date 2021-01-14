@@ -36,11 +36,27 @@ function buildQuiz() {
   choicesEl.innerHTML = "";
 
 
+function quizEnd() {
+  // timer stop
+  clearInterval(timerId);
 
-// timer countdown function;
+  // show end screen
+  var endScreenEl = document.getElementById("endScreen");
+  endScreenEl.removeAttribute("class");
+
+  // show score
+  var finalScoreEl = document.getElementById("finalScore");
+  finalScoreEl.textContent = time;
+
+  // hide question
+  questionsEl.setAttribute("class", "hide");
+}
+
+
+// timer countdown function
 function clockTick() {
     // time update
-    time;
+    time--;
     timerEl.textContent = time;
   
     // ends quiz when out of time
