@@ -1,6 +1,6 @@
 // variables
 var currentQuestionIndex = 0;
-var time = questions.length * 15;
+var time = 75;
 var timerId;
 
 var questionsEl = document.getElementById("questions");
@@ -23,6 +23,17 @@ function start() {
 
   buildQuiz();
 }
+
+function buildQuiz() {
+  // get current question
+  var currentQuestion = questions[currentQuestionIndex];
+
+  // for each question title
+  var titleEl = document.getElementById("quiz-title");
+  titleEl.textContent = currentQuestion.title;
+
+  // clear out old question choices
+  choicesEl.innerHTML = "";
 
 
 
