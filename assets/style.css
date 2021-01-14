@@ -11,9 +11,10 @@ p, div {
 
 /* text style and formatting */
 #quizStart, #endScreen, #questions {
+    line-height: 30px;
     text-align: center;
     padding: 50px;
-    border: lightgray 20px;
+    border: rgb(214, 214, 214) 20px;
     width: 500px;
     margin: auto;
   }
@@ -24,7 +25,7 @@ p, div {
     font-weight: bold;
     color: #28449c;
     font-size: 40px;
-    margin-right: 10em;
+    margin-right: 300px;
   }
 
 /* Button styling */

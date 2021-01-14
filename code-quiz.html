@@ -19,22 +19,23 @@
           <p>
             Welcome to my Javascript quiz! Try to answer all questions within the given time, but keep in mind incorrect answers will adversely affect your final score!
           </p>
-          
+          <!--start button-->
           <button id="start">Start Quiz</button>
         </div>
-
+        <!--questions page div-->
         <div id="questions" class="hide">
             <!-- display of quiz questions -->
             <div id="quiz-title"></div>
             <!-- display of choices -->
             <div id="choices" class="choices"></div>
           </div>
-    
+        <!--Quiz results page-->
         <div id="endScreen" class="hide">
             <h1>Quiz Finished!</h1>
             <!-- results -->
-            <p>Here is your final score <span id="final-score"></span>.</p>
+            <p>Here is your final score <span id="finalScore"></span>.</p>
         </div>
+        <div id="feedback" class="feedback hide"></div>
     </div>
 
     <script src="./assets/logic.js"></script>

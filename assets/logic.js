@@ -7,11 +7,12 @@ var questionsEl = document.getElementById("questions");
 var timerEl = document.getElementById("time");
 var choicesEl = document.getElementById("choices");
 var startBtn = document.getElementById("start");
+var feedbackEl = document.getElementById("feedback");
 
 // timer countdown function;
 function clockTick() {
     // time update
-    time--;
+    time;
     timerEl.textContent = time;
   
     // ends quiz when out of time
@@ -19,3 +20,5 @@ function clockTick() {
       quizEnd();
     }
   }
+
+  startBtn.onclick = start;
