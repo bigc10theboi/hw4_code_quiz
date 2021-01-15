@@ -69,7 +69,7 @@ function questionClick() {
   feedbackEl.setAttribute("class", "feedback");
   setTimeout(function () {
     feedbackEl.setAttribute("class", "feedback hide");
-  }, 1000);
+  }, 2500);
 
   // next question
   currentQuestionIndex++;

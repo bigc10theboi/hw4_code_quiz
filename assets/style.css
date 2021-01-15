@@ -53,3 +53,7 @@ button:hover {
 .hide {
     display: none;
 }
+.feedback {
+  text-align: center;
+  font-size: 100px;
+}
