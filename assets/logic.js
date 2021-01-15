@@ -64,14 +64,14 @@ function questionClick() {
   } else {
     feedbackEl.textContent = "Wrong!"
     // time penalty
-    time -= 10;;
+    time -= 10;
   }
 
   // flash feedback on page
   feedbackEl.setAttribute("class", "feedback");
   setTimeout(function () {
     feedbackEl.setAttribute("class", "feedback hide");
-  }, 3000);
+  }, 5000);
 
   // next question
   currentQuestionIndex++;
