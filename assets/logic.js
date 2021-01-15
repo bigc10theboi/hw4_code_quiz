@@ -1,6 +1,6 @@
 // variables
 var currentQuestionIndex = 0;
-var time = 75;
+var time = 60;
 var timerId;
 
 var questionsEl = document.getElementById("questions");
