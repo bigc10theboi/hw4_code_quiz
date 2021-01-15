@@ -9,6 +9,8 @@ var choicesEl = document.getElementById("choices");
 var startBtn = document.getElementById("start");
 var feedbackEl = document.getElementById("feedback");
 
+startBtn.onclick = start;
+
 // function to activate quiz start
 function start() {
   // Add "hide"class to start screen
@@ -53,23 +55,23 @@ function buildQuiz() {
 
 function questionClick() {
   // if wrong
-  if (this.value /= questions[currentQuestionIndex].answer) {
-    // time penalty
-    time -= 10;
+  if (this.value === questions[currentQuestionIndex].answer) {
 
     // display time on page
     timerEl.textContent = time;
 
-    feedbackEl.textContent = "Wrong!";
-  } else {
     feedbackEl.textContent = "Correct!";
+  } else {
+    feedbackEl.textContent = "Wrong!"
+    // time penalty
+    time -= 10;;
   }
 
   // flash feedback on page
   feedbackEl.setAttribute("class", "feedback");
   setTimeout(function () {
     feedbackEl.setAttribute("class", "feedback hide");
-  }, 2500);
+  }, 3000);
 
   // next question
   currentQuestionIndex++;
@@ -109,6 +111,4 @@ function clockTick() {
     if (time <= 0) {
       quizEnd();
     }
-  }
-
-  startBtn.onclick = start;
+}
