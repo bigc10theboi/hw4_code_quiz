@@ -24,6 +24,6 @@ Scoring for this quiz is based on your time of completion. To start the quiz sim
 
 Author: Carter Venne
 
-Github repository: https://github.com/bigc10theboi/hw4_code_quiz
+Github repository: https://github.com/cartervenne/hw4_code_quiz
 
-Deployed website: https://bigc10theboi.github.io/hw4_code_quiz/
+Deployed website: https://cartervenne.github.io/hw4_code_quiz/
